@@ -122,11 +122,11 @@ Adds or removes the specified flag permission for the given role in the player's
 Adds or removes the specified flag permission for the given role in the chunk the player is standing in. (usable by town mayor or plot owner)
 
 
-### allowing roles to perfomr certain commands
+### allowing roles to perform certain commands
 
 #### /town role command add/remove [role] [command]
 you can give roles in your town access to certain commands, for example allowing residents to claim land:
-`/town add command add resident town_claim` will allow residents to claim land
+`/town role command add resident town_claim` will allow residents to claim land
 
 
 ### Available Command Permissions
