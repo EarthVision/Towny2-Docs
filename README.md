@@ -12,7 +12,7 @@ Displays information about the player's town or other towns if specifying town n
 #### /town create [name]
 Creates a new town with the specified name and claims the current chunk as the homeblock, town creation costs money (configured in the plugin's config).
 
-### /town online [name]
+#### /town online [name]
 Displays the amount of line players in your town or a specific town.
 
 ### Claiming and Unclaiming
