@@ -17,24 +17,24 @@ Displays the amount of line players in your town or a specific town.
 
 ### Claiming and Unclaiming
 #### /town claim
-Claims the chunk the player is standing in for their town, can only claim chunks adjacent to an existing claim. (only usable by town mayor)
+Claims the chunk the player is standing in for their town, can only claim chunks adjacent to an existing claim. (only usable by town mayor or roles that have the permission)
 
 #### /town unclaim
-Unclaims the chunk the player is standing in (only usable by town mayor or plot owner).
+Unclaims the chunk the player is standing in (only usable by town mayor or plot owner or roles that have the permission).
 
 #### /town claim outpost 
-Claims the chunk the player is standing in as an outpost for their town. you can use this to claim chunks not adjacent to your town (only usable by town mayor)
+Claims the chunk the player is standing in as an outpost for their town. you can use this to claim chunks not adjacent to your town (only usable by town mayor or roles with the permission)
 
 #### /town autoclaim on/off
-Enables or disables the autoclaim feature for the player's town, which automatically claims chunks when the player moves to them. (only usable by town mayor)
+Enables or disables the autoclaim feature for the player's town, which automatically claims chunks when the player moves to them. (only usable by town mayor or roles with the permission)
 
 #### /town autounclaim on/off
-Enables or disables the autounclaim feature for the player's town, which automatically unclaims your towns chunks when the player moves to them. (only usable by town mayor)
+Enables or disables the autounclaim feature for the player's town, which automatically unclaims your towns chunks when the player moves to them. (only usable by town mayor or roles with the permission)
 
 ### Inviting, leaving and kicking players
 
 #### /town invite/add [player]
-Invites a player to the town (only usable by town mayor)
+Invites a player to the town (only usable by town mayor or roles with the permission)
 
 #### /accept [townName]
 Accepts an invitation to join the specified town.
@@ -43,7 +43,7 @@ Accepts an invitation to join the specified town.
 Leaves the player's current town (only usable by town members).
 
 #### /town kick [player]
-Kicks the specified player from the player's town (only usable by town mayors).
+Kicks the specified player from the player's town (only usable by town mayors or roles with the permission).
 
 ### Outposts
 #### /town outpost [number] 
@@ -95,7 +95,7 @@ you can use /t perm and /plot perm to easily manage town role permissions and fl
 Creates a new custom role in the town.
 #### /town rank assign [player] [role]
 Assigns the specified role to the given player in the town.
-#### /town rank revoke [player] [role] (not yet implemented)
+#### /town rank revoke [player] [role] (wip)
 removes the players role and assigns them resident.
 #### /town rank delete [role] 
 Deletes the specified role from the town.
