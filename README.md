@@ -1,7 +1,6 @@
-# Towny2-Docs
+# Towny2-Docs (Wip)
 New towny Guide :)
 
-# Docs (WIP)
 
 ## [Town management]
 for all /town commands you can use /t as an alias, eg /t create [name], /t claim, /t unclaim etc
