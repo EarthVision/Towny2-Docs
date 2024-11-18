@@ -1,5 +1,6 @@
 # Towny2-Docs
 New towny Guide :)
+
 # Docs (WIP)
 
 ## [Town management]
@@ -54,6 +55,8 @@ Lists the town's outposts, with an optional page number.
 ### misc (to be organized]
 #### /plot set name [name] 
 Sets the name of the plot (chunk) the player is standing in.
+#### /plot clearname
+Removes the custom name from a plot.
 #### /town deposit [amount]
 Deposits the specified amount of money from the player's balance into the town's balance.
 #### /town withdraw [amount]
@@ -123,18 +126,45 @@ Adds or removes the specified flag permission for the given role in the chunk th
 ### allowing roles to perfomr certain commands
 
 #### /town role command add/remove [role] [command]
-adds or removes access to that command to that role.
-for example "/town add command add resident town_claim" will allow residents to claim land
+you can give roles in your town access to certain commands, for example allowing residents to claim land:
+`/town add command add resident town_claim` will allow residents to claim land
+
+
+### Available Command Permissions
+ using `/town role command add/remove [role] [command]`:
+
+- TOWN_CLAIM - Allow claiming land for the town
+- TOWN_UNCLAIM - Allow unclaiming town land
+- TOWN_KICK - Allow kicking residents from the town
+- TOWN_DELETE - Allow deleting the town
+- TOWN_ROLE_CREATE - Allow creating new ranks
+- TOWN_ROLE_ASSIGN - Allow assigning ranks to residents
+- TOWN_ROLE_DELETE - Allow deleting ranks
+- TOWN_INVITE - Allow inviting new residents
+- TOWN_RENAME - Allow renaming the town
+- TOWN_WITHDRAW - Allow withdrawing from town bank
+- TOWN_TRUST - Allow managing town-wide trust
+- TOWN_TOGGLE - Allow toggling town flags
+- TOWN_SET_BOARD - Allow setting town board
+- TOWN_SET_SPAWN - Allow setting town spawn
+- TOWN_SET_HOMEBLOCK - Allow setting town homeblock
+- TOWN_SET_TAXES - Allow setting town tax rate
+- TOWN_SET_MAPCOLOR - Allow setting town color on dynmap
+- PLOT_TOGGLE - Allow toggling plot flags
+- PLOT_SET_NAME - Allow setting plot names
+- PLOT_TRUST - Allow managing plot trust
+- PLOT_PERM - Allow managing plot permissions
+- PLOT_EVICT - Allow evicting plot renters
 
 ### Modifying town flags
 modifying flags like pvp, mobs, explosions across the whole town or individual plot
 
 
-#### /town toggle pvp/mobs/explosions
-Toggles the specified flag (e.g., PVP, MOBS, EXPLOSIONS) for the entire town.(usable by town mayor)
+#### /town toggle pvp/mobs/explosions/fire
+Toggles the specified flag (e.g., PVP, MOBS, EXPLOSIONS, FIRE) for the entire town.(usable by town mayor)
 
-#### /plot toggle pvp/mobs/explosions
-Toggles the specified flag (e.g., PVP, MOBS, EXPLOSIONS) for the chunk the player is standing in.(usable by town mayor and plot owner)
+#### /plot toggle pvp/mobs/explosions/fire
+Toggles the specified flag (e.g., PVP, MOBS, EXPLOSIONS, FIRE) for the chunk the player is standing in.(usable by town mayor and plot owner)
 
 
 ## [Selling, buying and renting plots]
@@ -144,6 +174,9 @@ purchased plots will still be claimed and owned by the plot owner even after the
 
 #### /plot claim
 Purchases a plot (chunk) that is for sale or rent if the player has enough funds.
+
+#### /plot evict
+Evicts the current renter from a plot. Can be used by the town mayor or plot owner.
 
 #### /plot nfs
 Removes the plot (chunk) the player is standing in from being for sale. (usable by mayor or plot owner)
@@ -175,6 +208,16 @@ Sets the plot (chunk) the player is standing in for rent as public(anybody can r
 
 ### etc
 
+#### /town set homeblock
+Sets the town's homeblock to the current chunk. The homeblock is the central chunk of your town and cannot be unclaimed. Town spawn must be set within the homeblock.
+
+#### /town set taxes [amount]
+Sets the tax rate for town residents. Taxes are collected daily as a percentage of each resident's balance.
+
+#### /town reclaim
+If a town has fallen into ruins (due to bankruptcy), the mayor can use this command to reclaim the town once sufficient funds have been deposited.
+
+
 
 ## [Trust]
 you can use trust to easily give players outside your town or owned plot access to your town or owned plots
@@ -199,4 +242,23 @@ Grants/removes the specified player's trust permissions for the specified flag i
 #### /plot trust add/remove [player] break/build/switch/itemuse 
 Grants/removes the specified player's permissions for the specified flag in the chunk the player is standing in. (usable by town mayor or current plot renter)
 
-# Nations (WIP)
+# Nations
+
+
+#### /nation
+Displays information about your current nation, including the nation name, board message, leader, founding date, and bank balance.
+
+#### /nation [nationname]
+Displays information about the specified nation.
+
+#### /nation create [name]
+Creates a new nation with your town as the capital.
+
+#### /nation list [page]
+Lists all nations on the server with their resident counts. Optional page number for pagination.
+
+#### /nation ally (wip)
+
+
+#### /nation enemy (wip)
+
