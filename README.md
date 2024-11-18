@@ -156,7 +156,7 @@ you can give roles in your town access to certain commands, for example allowing
 - PLOT_EVICT - Allow evicting plot renters
 
 ### Modifying town flags
-modifying flags like pvp, mobs, explosions across the whole town or individual plot
+modifying flags like pvp, mobs, explosions, fire across the whole town or individual plot
 
 
 #### /town toggle pvp/mobs/explosions/fire
