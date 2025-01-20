@@ -169,7 +169,7 @@ Toggles the specified flag (e.g., PVP, MOBS, EXPLOSIONS, FIRE) for the chunk the
 ## [Selling, buying and renting plots]
 There are 2 ways to sell/rent a plot, private sale and public sale, private sale basically just means only town residents can buy/rent the plot, public sale means anybody, even players without a town can buy/rent the plot.
 
-purchased plots will still be claimed and owned by the plot owner even after the orig town is deleted, rented plots will be deleted with the parent town.
+purchased plots will still be claimed and owned by the plot owner even after the original town is deleted, rented plots will be deleted with the parent town.
 
 #### /plot claim
 Purchases a plot (chunk) that is for sale or rent if the player has enough funds.
