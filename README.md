@@ -256,8 +256,25 @@ Creates a new nation with your town as the capital.
 #### /nation list [page]
 Lists all nations on the server with their resident counts. Optional page number for pagination.
 
-#### /nation ally (wip)
 
+#### /nation delete
+Disbands your nation permanently. 
+
+#### /nation invite <town>
+Invites a town to join your nation.
+
+
+#### /nation accept <nation>
+Accepts an invitation to join a nation.
+
+
+#### /nation kick <town>
+Kicks a town from your nation.
+
+
+
+#### /nation ally (wip)
+sends an invite to Ally with another nation
 
 #### /nation enemy (wip)
-
+sets another nation as enemy
