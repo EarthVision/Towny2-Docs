@@ -1,5 +1,5 @@
 # Towny2-Docs (Wip)
-New towny Guide :)
+New towny Commands :)
 
 
 ## [Town management]
@@ -271,10 +271,26 @@ Accepts an invitation to join a nation.
 #### /nation kick <town>
 Kicks a town from your nation.
 
+#### /nation rename [newname]
+Renames your nation to the specified new name. Only usable by the nation owner.
 
+#### /nation set capital [town]
+Sets a new capital town for your nation. The town must be a member of your nation. Only usable by the nation owner.
 
-#### /nation ally (wip)
-sends an invite to Ally with another nation
+#### /nation set owner [player]
+Transfers nation ownership to another player. Only usable by the current nation owner.
 
-#### /nation enemy (wip)
-sets another nation as enemy
+#### /nation ally [nation]
+Sends an ally request to another nation. Only usable by the nation owner.
+
+#### /nation enemy [nation]
+Declares another nation as an enemy. Only usable by the nation owner.
+
+#### /nation unally [nation]
+Removes a nation from your allies. Only usable by the nation owner.
+
+#### /nation unenemy [nation]
+Removes a nation from your enemy list. Only usable by the nation owner.
+
+#### /nation leave
+Leaves the nation your town is a part of. Only usable by town mayors.
