@@ -293,4 +293,4 @@ Removes a nation from your allies. Only usable by the nation owner.
 Removes a nation from your enemy list. Only usable by the nation owner.
 
 #### /nation leave
-Leaves the nation your town is a part of. Only usable by town mayors.
+Leaves the nation your town is a part of. Only usable by town mayors within a nation.
